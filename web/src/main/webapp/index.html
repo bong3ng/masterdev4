@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="information">
+        <form action="./table/target.jsp" method="get">
+            <div class="form_contain">
+                <div class="billing_address">
+                    <h2>Billing Address</h2>
+                    <div class="input_infor">
+                        <label for=""><i class="fa fa-user" aria-hidden="true"> Full Name</i>
+                        </label>
+                        <input type="text" placeholder="John M. Doe" name="fullName" required>
+                    </div>
+                    <div class="input_infor" >
+                        <label for=""><i class="fa fa-envelope" aria-hidden="true" > Email</i>
+                        </label>
+                        <input type="email" placeholder="john@example.com" name="email">
+                    </div>
+                    <div class="input_infor">
+                        <label for=""><i class="fa fa-address-card-o" aria-hidden="true"> Address</i>
+                        </label>
+                        <input type="text" placeholder="542 W. 15th Street" name="address">
+                    </div>
+                    <div class="input_infor">
+                        <label for=""><i class="fa fa-university" aria-hidden="true"> City</i>
+                        </label>
+                        <input type="text" placeholder="New York" name="city">
+                    </div>
+                    <div class="input_contain">
+                        <div class="input_item">
+                            <label for="">State</label>
+                            <input type="text" placeholder="NY" name="state">
+                        </div>
+                        <div class="input_item">
+                            <label for="">Zip</label>
+                            <input type="text" placeholder="10001" name="zip">
+                        </div>
+                    </div>
+                </div>
+                <div class="payment">
+                    <h2>Payment</h2>
+                    <div class="accepted_cards">
+                        <p>Accepted Cards</p>
+                        <div class="img_cards">
+                            <img src="./img/major-credit-card-logos-png-5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="input_infor"><label for="">Name on Card</label>
+                    <input type="text" placeholder="John More Doe" name="nameOnCard"></div>
+                    <div class="input_infor"><label for="">Credit card number</label>
+                    <input type="text" placeholder="1111-2222-3333-4444" name="creditNumber"></div>
+                    <div class="input_infor"><label for="">Exp Month</label>
+                    <input type="text" placeholder="September" name="expMonth"></div>
+                    <div class="input_contain">
+                        <div class="input_item">
+                            <label for="">Exp Year</label>
+                            <input placeholder="2018" type="text" name="expYear">
+                        </div>
+                        <div class="input_item">
+                            <label for="">CVV</label>
+                            <input placeholder="352" type="text" name="cvv">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="checkbox" value="Yes">
+                <label for="checkbox">Shipping address same as billings</label>
+            </div>
+            <input class="checkout" type="submit" value="Continue to checkout">
+        </form>
+    </div>
+    <div class="cart">
+        <div class="title">
+            <div>
+            <h3>Cart</h3>
+            <h3>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i> 4</h3>
+            </div>
+            
+        </div>
+        <div class="product">
+            <div>
+            <a href="">Product 1</a>
+            <p>$15</p>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+            <a href="">Product 2</a>
+            <p>$5</p>
+            </div>
+        </div>
+        <div class="product">
+         
+            <div>
+            <a href="">Product 3</a>
+            <p>$8</p>
+            </div>
+        </div>
+        <div class="product">
+         
+            <div>
+            <a href="">Product 4</a>
+            <p>$2</p>
+            </div>
+        </div>
+        <div class="total">
+         
+            <div>
+            <p>Total</p>
+            <p>30$</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
